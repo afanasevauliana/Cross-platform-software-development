@@ -1,3 +1,10 @@
+<?php
+    // Читаем содержимое файла с новостями пользователей.
+    $str = file_get_contents("news.json") or die("Не удалось прочитать файл с новостями");
+
+    // Преобразуем JSON в PHP-массив для вывода данных в таблице.
+    $news = json_decode($str, true);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +15,10 @@
 </head>
 <body>
     <p class="navigation">
-        <a href="index.html">Главная</a>
+        <a href="index.php">Главная</a>
         <a href="economics.html">Экономика</a>
         <a href="culture.html">Культура</a>
+        <a href="adding_news.php">Добавить новость</a>
     </p>
 
     <img src="i.webp" width="100%" height="210">
@@ -87,6 +95,26 @@
             <td colspan="2" align="center"><strong>Средняя оценка</strong></td>
             <td><strong>⭐ 4.8</strong></td>
         </tr>
+    </table>
+
+
+
+
+    <h2>Новости пользователей</h2>
+    <table border="1" width="100%">
+        <tr bgcolor="#f0f0f0">
+            <th>Новость</th>
+            <th>Категория</th>
+            <th>Дата</th>
+        </tr>
+
+        <?php foreach ($news as $item): ?>
+            <tr>
+                <td><?php echo $item["title"]; ?></td>
+                <td><?php echo $item["category"]; ?></td>
+                <td><?php echo $item["date"]; ?></td>
+            </tr>
+        <?php endforeach; ?>
     </table>
 
 </body>

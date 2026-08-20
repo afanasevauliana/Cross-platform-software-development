@@ -1,0 +1,7 @@
+http://localhost/Cross-platform-software-development/lab2/
+
+- json_decode() — преобразует JSON в PHP-массив                                                                                                                                         
+- json_encode() — преобразует массив обратно в JSON                                                                                                                                        
+- JSON_UNESCAPED_UNICODE — сохраняет русские буквы                                                                                                                                         
+- JSON_PRETTY_PRINT — форматирует JSON                                                                                                                                                                                                                                                                     
+- HTML-атрибут required — не позволяет отправить пустое поле
