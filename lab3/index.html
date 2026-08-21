@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Змейка</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <h2>Игра «Змейка»</h2>
+  <p id="cnt-text">
+    Счёт: <span id="cnt">0</span> |
+    Рекорд: <span id="record">0</span>
+  </p>
+  <div class="game-field">
+    <canvas id="game-canvas" width="600" height="600">
+      Ваш браузер не поддерживает Canvas.
+    </canvas>
+    <div class="game-controls">
+      <p id="game-message" hidden></p>
+      <button id="restart-button" type="button">Начать игру</button>
+    </div>
+  </div>
+</body>
+</html>
