@@ -1,0 +1,8 @@
+в PowerShell cd D:\github\Cross-platform-software-development\lab6
+python run.py
+в браузере  http://127.0.0.1:8000  
+Можно открыть сайты напрямую:                                                                                                                                   
+                                                                                                                                                                  
+  http://127.0.0.1:8000/class-components/                                                                                                                         
+                                                                                                                                                                  
+  http://127.0.0.1:8000/functional-components/  

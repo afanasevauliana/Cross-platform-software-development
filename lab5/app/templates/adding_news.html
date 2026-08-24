@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Добавление новости{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='news.js') }}" defer></script>
+{% endblock %}
+
+{% block content %}
+    <img class="page-banner" src="{{ url_for('static', filename='images/c.webp') }}" alt="Добавление новости">
+    <h2 id="main-title">Добавление новости</h2>
+    <p>Здесь вы можете добавить свою новость.</p>
+
+    <form id="news-form">
+        <p>
+            <label for="news-title">Название новости:</label><br>
+            <input type="text" id="news-title" name="title" required>
+        </p>
+        <p>
+            <label for="category">Категория:</label><br>
+            <select id="category" name="category" required>
+                <option value="">Выберите категорию</option>
+                <option value="Экономика">Экономика</option>
+                <option value="Культура">Культура</option>
+                <option value="Город">Город</option>
+                <option value="Общество">Общество</option>
+                <option value="Политика">Политика</option>
+                <option value="Наука">Наука</option>
+                <option value="Технологии">Технологии</option>
+                <option value="Спорт">Спорт</option>
+                <option value="Происшествия">Происшествия</option>
+            </select>
+        </p>
+        <p>
+            <label for="date">Дата:</label><br>
+            <input type="date" id="date" name="date" required>
+        </p>
+        <button type="submit">Добавить новость</button>
+    </form>
+
+    <p id="news-message"></p>
+{% endblock %}

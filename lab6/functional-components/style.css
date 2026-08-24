@@ -1,0 +1,74 @@
+/* селектор тега — все абзацы */
+p {
+    font-size: 20px;
+}
+
+/* основные стили для ссылок */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+a:visited {
+    color: #0066cc;
+}
+
+a:hover {
+    color: #e74c3c;
+    background-color: #f0f0f0;
+    text-decoration: underline;
+}
+
+/* панель навигации сохранена в стиле предыдущей лабораторной */
+.navigation {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.navigation button {
+    color: white;
+    margin-right: 20px;
+    padding: 5px 10px;
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navigation button:hover,
+.navigation button.active {
+    background-color: #555;
+    color: #ffaa33;
+    text-decoration: underline;
+}
+
+#main-title {
+    color: #1a5276;
+    border-left: 5px solid #e74c3c;
+    padding-left: 15px;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.site-header {
+    text-align: center;
+}
+
+main {
+    min-height: 450px;
+}
+
+/* дополнительные правила для списка React-компонентов */
+.news-card {
+    padding: 10px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.category {
+    color: #e74c3c;
+    font-weight: bold;
+}

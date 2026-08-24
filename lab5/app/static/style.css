@@ -1,0 +1,71 @@
+/* селектор тега — все абзацы */
+p {
+    font-size: 20px;
+}
+
+/* селектор тега — все таблицы */
+table {
+    border-collapse: collapse;
+}
+
+/* основные стили для ссылок */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+/* посещённые ссылки остаются синими (чтобы :hover работал корректно) */
+a:visited {
+    color: #0066cc;
+}
+
+/* псевдокласс hover для всех ссылок */
+a:hover {
+    color: #e74c3c;
+    background-color: #f0f0f0;
+    text-decoration: underline;
+}
+
+/* селектор класса — блок навигации (тёмный фон с отступами) */
+.navigation {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* ссылки внутри блока .navigation — белые */
+.navigation a {
+    color: white;
+    margin-right: 20px;
+}
+
+/* при наведении на ссылки в навигации — жёлтые */
+.navigation a:hover {
+    background-color: #555;
+    color: #ffaa33;
+    text-decoration: underline;
+}
+
+/* селектор идентификатора */
+#main-title {
+    color: #1a5276;
+    border-left: 5px solid #e74c3c;
+    padding-left: 15px;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+/* баннер сохраняет пропорции и не растягивается */
+.page-banner {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+/* шапка сайта */
+.site-header {
+    text-align: center;
+}

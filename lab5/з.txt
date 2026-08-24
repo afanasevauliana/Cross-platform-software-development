@@ -1,0 +1,3 @@
+в PowerShell cd D:\github\Cross-platform-software-development\lab5
+.\.venv\Scripts\python.exe run.py
+В браузере: http://127.0.0.1:5050
